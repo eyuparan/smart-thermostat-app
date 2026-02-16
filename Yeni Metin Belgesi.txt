@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//akıllı termostat programı
+int akilli_termostat(int sicaklik_degeri){
+if(sicaklik_degeri<20){
+printf("hava soguk kombi isitici modunda  calissin\n");
+}else if(sicaklik_degeri>25){
+printf("hava sicak klima sogutucu modunda calissin\n");
+}else{
+printf("hava normal tasarruf modunda calissin\n");
+}//tamsayi değerleri alacağı için 3 koydum.
+return 5;
+}
+//ikinci bölümü yazalım.
+int main()
+{
+int sicaklik_degeri;
+while(1){
+printf("odanin sicaklik degerini giriniz:\n");
+scanf("%d",&sicaklik_degeri);
+akilli_termostat(sicaklik_degeri);
+}
+return 0;
+}
+//bitiş
